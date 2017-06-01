@@ -9,7 +9,6 @@
 }
 .row {
   position: relative;
-  overflow: auto;
 }
 .col-md-6 {
   position: relative;
@@ -66,11 +65,66 @@
    border-radius: 50%;
    background: #4679BD;
    display: block;
-   margin: auto;
+   margin: 5% auto;
 }
-.col-xs-12 {
-  background-color: black;
-  height: 275px;
-  margin-top: 10%;
-  border: 2px solid yellow;
+
+@media screen and (min-width: 0px) and (max-width: 991px){
+  #hideColumnThree {
+    display: none;
+  }
+  .col-xs-12 {
+    background-color: black;
+    height: 275px;
+    margin: 5% auto;
+    border: 2px solid yellow;
+  }
+  .mediumVersion {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .mediumVersion {
+    position: relative;
+    border: 2px solid red;
+  }
+  .mediumVersion p {
+    position: relative;
+    left: .9%;
+    margin: 3%;
+    padding: 0;
+  }
+  .col-md-3 {
+    background-color: black;
+    height: 275px;
+    margin: 5% 4.1%;
+    border: 2px solid yellow;
+
+  }
+  .col-md-5 h1 {
+    position: relative;
+    left: 4%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .col-md-6 h1 {
+    position: relative;
+    left: 4%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .square {
+    width: 10%;
+    padding-top: 10%;
+    background-color: black;
+    position: absolute;
+    left: -5%;
+
+
+  }
+  #hideColumnThree {
+    display: block;
+  }
 }
